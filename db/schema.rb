@@ -38,12 +38,14 @@ ActiveRecord::Schema.define(version: 2023_03_28_200253) do
 
   create_table "assignments", force: :cascade do |t|
     t.bigint "item_id"
+    t.bigint "parent_id"
     t.date "due_date"
     t.boolean "completion"
     t.string "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["item_id"], name: "index_assignments_on_item_id"
+    t.index ["parent_id"], name: "index_assignments_on_parent_id"
   end
 
   create_table "case_workers", force: :cascade do |t|
@@ -114,6 +116,7 @@ ActiveRecord::Schema.define(version: 2023_03_28_200253) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "assignments", "items"
+  add_foreign_key "assignments", "parents"
   add_foreign_key "case_workers", "users"
   add_foreign_key "items", "categories"
   add_foreign_key "parents", "users"
