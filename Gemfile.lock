@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/cmu-is-projects/materialize-form.git
+  revision: 57aba24dbf1e161b1a223abb55bd07b1d38306ee
+  specs:
+    materialize-form (1.0.8)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -172,7 +178,6 @@ GEM
       net-pop
       net-smtp
     marcel (1.0.2)
-    materialize-form (1.0.8)
     materialize-sass (1.0.0)
       autoprefixer-rails (>= 6.0.3)
     method_source (1.0.0)
@@ -358,7 +363,7 @@ DEPENDENCIES
   jquery-ui-rails
   launchy (= 2.5.0)
   listen (= 3.1.5)
-  materialize-form (= 1.0.8)
+  materialize-form!
   materialize-sass (= 1.0.0)
   minitest-rails (= 3.0.0)
   minitest-reporters (= 1.1.19)
