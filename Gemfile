@@ -33,9 +33,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '3.1.16'
 gem 'nokogiri', '1.13.3'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '1.10.2', require: false  # '1.4.6'
 
