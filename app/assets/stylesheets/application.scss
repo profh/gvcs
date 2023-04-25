@@ -2,11 +2,11 @@
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
  * vendor/assets/stylesheets directory can be referenced here using a relative path.
  *
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
@@ -27,33 +27,46 @@
     margin: 0px;
  }
 
-#padded_content {
-  padding-left: 20px;
-  margin: 0px;
-}
+ #topbar_style a {
+   color: #518458;
+ }
 
-#flash_box {
-  font-weight: bold;
-  text-align: center;
-  background: #fae5aa;
-  font-size: 1.25em;
-  background-clip: padding-box;
-}
+ #padded_content {
+    padding-left: 20px;
+    margin: 0px;
+ }
 
-#nav {
-  background: #518458;
-}
+ #flash_box {
+    font-weight: bold;
+    text-align: center;
+    background: #fae5aa;
+    font-size: 1.25em;
+    background-clip: padding-box;
+ }
 
-.btn {
-  background-color: #bf8c15;
-}
+ #nav {
+    background: #518458;
+ }
 
-h4 {
-   font-weight: bold;
-   color: #bf8c15;
-}
+ .btn {
+    background-color: #bf8c15;
+ }
 
-.container {
-  margin-left: 100px;
-  margin-right: 100px;
-}
+ h4 {
+     font-weight: bold;
+     color: #bf8c15;
+ }
+
+ .container {
+    margin-left: 100px;
+    margin-right: 100px;
+ }
+
+ .completion_column_container {
+   display: flex;
+ }
+
+ .completion_column {
+   flex: 1; /* This will distribute the available space equally between columns */
+   padding: 10px; /* Adding some padding for visual spacing */
+ }
